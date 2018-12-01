@@ -15,7 +15,11 @@ comidaSchema = new Schema({
     }
 
 });
+let Comida = moongose.model('comida',comidaSchema);
+/*
+Comida.save(function (err) {
+    if(err) return err    
+})
+*/
 
-
-
-module.exports = moongose.model('comida',comidaSchema);
+module.exports = Comida
