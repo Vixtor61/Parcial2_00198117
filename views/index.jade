@@ -3,9 +3,17 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form#registrar(method = 'post')
+    input#nombre(type="text", name="nombre")
+    input#tipo(type="text", name="tipo")
+    input#precio(type="text", name="")
+    input(type="submit", value="registrar")
+
+
   tbody#comidatabla
     tr#fila 
-      td#id 1
-      td#nombre lasagna
-      td#tipo pasta
+      td#id1 1
+      td#nombre1 lasagna
+      td#tipo1 pasta
+      td#precio1 12
 
