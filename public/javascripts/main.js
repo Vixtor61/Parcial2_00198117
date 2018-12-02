@@ -40,6 +40,7 @@ function load () {
                 <th>${element.nombre}</th>
                 <th>${element.tipo}</th>
                 <th>${element.precio}</th>
+                <th><a href= "/api/${element._id}">borrar<th>
                 </tr>`;
                 fila = fila+a;
               
