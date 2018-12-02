@@ -41,10 +41,17 @@ function load () {
                 <th>${element.tipo}</th>
                 <th>${element.precio}</th>
                 <th><a href= "/api/${element._id}">borrar<th>
+                <th><button id = "btn"name="${element._id}">borrar</button><th>
                 </tr>`;
                 fila = fila+a;
               
           });
+         
+         document.querySelectorAll("#btn").forEach(element => {
+             console.log(element+"sd");
+             
+         });
+           
           document.querySelector("#comidatabla").innerHTML = fila;
           
       })
